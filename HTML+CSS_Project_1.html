@@ -1,0 +1,342 @@
+<html>
+
+<head>
+
+    <title>First Project(HTML+CSS)</title>
+    <link rel="icon" type="image/x-icon" href="html+css.png">
+
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        /*for whole page image*/
+        div.all{
+            
+            background-image: url(task1image.jpeg);
+            object-fit:contain;
+            /* margin-top:20px; */
+            background-attachment: fixed;
+            font-family: poppins,sans-serif;
+            font-size: larger;
+        }
+
+        /*for whole page color*/
+       
+       div.backgroundcolor{
+        width: 100%;
+        background-color: rgba(58, 58, 158, 0.5);
+        padding-top:20px;
+       } 
+            
+        
+            
+       /*for header texts*/
+        h1{
+            text-align:center;
+            color:white;
+            font-weight:200;
+            font-size:xx-large;
+        }
+
+        h3{
+            text-align:center;
+            color:white;
+        }
+        /*for form color*/
+        div.formcolor{
+            background-color:rgba(36, 34, 46, 0.8);
+            margin-left:25%;
+            margin-right:25%;
+            color:white;
+            padding:20px;
+            border-radius:5px 5px;
+        }
+        /*for form texts*/
+
+       input{
+            margin:8px 0 8px 0;
+        }
+
+        input[type=radio]{
+            margin:8px 0 8px 0;
+            padding:20px;
+        }
+
+        div.form{
+            /* padding:2%; */
+            font-size:larger;
+            line-height:1.5;
+        }
+
+         input[type=text]{
+            width: 98%;
+            height: 40px;
+            border-radius: 5px 5px;
+            margin-right: 20px;
+            font-size: medium;
+            padding:20px;
+
+        }
+
+         
+         input[type=email]{
+            width:98%;
+            height:40px;
+            border-radius:5px 5px;
+            margin-right:20px;
+            font-size:medium;
+            padding:20px;
+         }
+
+         
+         input[type=number]{
+            width:98%;
+            height:40px;
+            border-radius:5px 5px;
+            margin-right:20px;
+            font-size:medium;
+            margin-top:10px;
+            padding:20px;
+         }
+
+         /*for form input area*/
+
+          .cmncls{
+            margin:14px;
+          }
+
+          p{
+            margin-bottom:10px;
+          }
+         select{
+            width:98%;
+            height:40px;
+            border-radius:5px 5px;
+            margin-right:20px;
+            /* padding:20px; */
+            font-size:medium;
+            margin-top:10px;
+            /* margin-bottom: 10px; */
+            /* position: absolute; */
+         }
+
+         input[type=radio]{
+            accent-color:rgb(0,117,255);
+            font-size:medium;
+            height:20px;
+            width:20px;
+            padding:20px;
+            /* margin-top:10px; */
+         }
+
+         input[type=checkbox]{
+            accent-color:rgb(0,117,255);
+            font-size:medium;
+            height:20px;
+            width:20px;
+            /* margin-top:10px; */
+         }
+
+         .different{
+            margin-top:10px;
+            margin-left:18px;
+         }
+
+         .checkall{
+            display:flex;
+            flex-direction: column;
+         }
+
+         /* .inptv{
+            margin-bottom:5px; */
+         
+
+        textarea {
+           width:100%;
+           height:150px;
+           border-radius:5px 5px;
+           font-size:x-large;
+           padding:10px 20px;
+           margin-top:10px;
+        }
+
+        textarea:hover{
+            background-color:lightskyblue;
+            box-shadow: 5px 5px 4px white;
+        }
+           
+        
+
+        input[type=submit]{
+            color:white;
+            background-color:#0ab576;
+            height:40px;
+            margin:14px 8px 0 0px;
+            width:100%;
+            border-radius:5px 5px;
+            
+
+        }
+
+        input[type=submit]:hover{
+            background-color: #0ab576;           
+            color:white;
+            
+        }
+
+        input:hover{
+
+        background-color: lightskyblue;
+        box-shadow: 5px 5px 4px white;
+        }
+
+        select:hover{
+            background-color:lightskyblue;
+            box-shadow: 5px 5px 4px white;
+            
+        }
+
+         </style>
+</head>
+
+<body>
+    <!-- /*for whole page background image*/ -->
+    <div class="all"> 
+
+      <!-- /*for whole page background color*/ -->
+    <div class="backgroundcolor">
+
+    <h1>freeCodeCamp Survey Form</h1>
+    <h3><i>Thank you for taking the time to help us improve the platform</i></h3>
+        <!-- /*for form background color*/ -->
+    <div class="formcolor">
+          <!-- /*for form texts*/ -->
+        <div class="form">
+        <form>
+            <div class="cmncls">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="cmncls">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        </div>
+        <div class="cmncls">
+        <label for="age">Age(optional)</label><br>
+        <input type="number" id="age" name="age" placeholder="Age">
+        </div>
+        <div class="cmncls">
+        <label for="role">What option describes your current role?</label>
+        <select id="role" required>
+            <option value="student">Student</option>
+            <option value="job">full Time Job</option>
+            <option value="learner">Full Time Learner </option>
+            <option value="nosay">Prefer Not to say</option>
+        </select>
+        </div>
+
+        <div class="different">
+        <div class="checkall">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <div class="inptv">
+        <input type="radio" id="definitely" name="radio">
+        <label for="definitely">Definitely</label></div>
+        <div class="inptv">
+        <input type="radio" id="maybe" name="radio">
+        <label for="maybe">Maybe</label></div>
+        <div class="inptv">
+        <input type="radio" id="ntsure" name="radio">
+        <label for="ntsure">Not Sure</label></div>
+        </div></div>
+
+        <div class="cmncls">
+            <div class="checkall">
+        <label for="freecodecamp">What is your favorite feature of freeCodeCamp?</label>
+        <div class="inptv"></div>
+        <select id="freecodecamp">
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="opensource">Open Source</option>
+        </select>
+        </div></div>
+
+        <div class="different">
+        <div class="checkall">
+        <p>What would you like to see improved? (Check all that apply)</p>
+        
+            <div class="inptv">
+            <input type="checkbox" id="fep" name="fep">
+            <label for="fep">Front-end Projects</label></div>
+
+            <div class="inptv">
+            <input type="checkbox" id="bep" name="bep">
+            <label for="bep">Back-end Projects</label>
+            </div>
+
+            <div class="inptv">
+            <input type="checkbox" id="dv" name="dv">
+            <label for="dv">Data Visualization</label>
+            </div>
+
+            <div class="inptv">
+            <input type="checkbox" id="clngs" name="clngs">
+            <label for="clngs">Challenges</label>
+            </div>
+
+            <div class="inptv">
+            <input type="checkbox" id="OS" name="OS">
+            <label for="OS">Open Source community</label>
+            </div>
+
+            <div class="inptv">
+            <input type="checkbox" id="gr" name="gr">
+            <label for="gr">Gitter help Community</label>
+            </div>
+
+            <div class="inptv">
+            <input type="checkbox" id="video" name="video">
+            <label for="video">Videos</label>
+            </div>
+
+            <div class="inptv">
+            <input type="checkbox" id="city" name="city">
+            <label for="city">City Meetups</label>
+            </div>
+
+            <div class="inptv">
+            <input type="checkbox" id="wiki" name="wiki">
+            <label for="wiki">Wiki</label>
+            </div>
+
+            <div class="inptv">
+            <input type="checkbox" id="forum" name="forum">
+            <label for="forum">Forum</label>
+            </div>
+        
+            <div class="inptv">
+            <input type="checkbox" id="add" name="add">
+            <label for="add">Additional Courses</label> </div>
+            </div>
+            </div>
+
+
+<div class="cmncls">
+            <p>Any comments or suggestions?</p>
+            <textarea placeholder="Enter your comment here..." required></textarea>
+            </div>
+
+            <div class="cmncls">
+            <input type="submit" value="Submit" name="submit" style="font-size:large;">
+</div>
+
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
